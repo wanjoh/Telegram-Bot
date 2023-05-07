@@ -13,7 +13,8 @@ def main() -> None:
 
     app.add_handlers([
         CommandHandler('hello', greeting), 
-        CommandHandler('image', generate_image)
+        CommandHandler('image', generate_image),
+        CommandHandler('video', generate_video)
         ])
 
     app.run_polling()

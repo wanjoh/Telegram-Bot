@@ -2,3 +2,4 @@ python-telegram-bot>=20.2
 python-dotenv>=1.0.0; sys_platform == 'win32'
 dotenv>=1.0.0; sys_platform == 'linux' or sys_platform == 'darwin'
 validators>=20.0.0
+yt-dlp>=2023.3.4

@@ -1,2 +1,4 @@
 *.env
 .idea
+*.mp4
+*.json
