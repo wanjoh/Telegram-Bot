@@ -9,7 +9,12 @@ load_dotenv()
 
 def main() -> None:
 
-    app = ApplicationBuilder().token(os.environ['TOKEN']).build()
+    # timeouts added because of TimedOut errors
+    app = ApplicationBuilder()\
+        .token(os.environ['TOKEN'])\
+        .read_timeout(30)\
+        .write_timeout(30)\
+        .build()
 
     app.add_handlers([
         CommandHandler('hello', greeting), 

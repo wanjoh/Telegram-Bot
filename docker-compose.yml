@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  bot:
+    build: .
+    environment:
+      - TOKEN=${TOKEN}
+    restart: unless-stopped
+    ports:
+      - "8000:5000"

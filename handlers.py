@@ -1,4 +1,3 @@
-import os
 import validators
 import re
 
@@ -7,12 +6,11 @@ from telegram.ext import ContextTypes
 from type_enum import RequestType
 
 import yt_dlp
-from yt_dlp import YoutubeDL
 import json
 
 image_whitelist = ['jpg', 'png']
 
-MAX_DURATION = 300
+MAX_DURATION = 360
 
 
 async def greeting(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
